@@ -404,7 +404,7 @@ void loadFromFile(Node** head, char* filename) {
         char line[MAX_SIZE];
     		while (fgets(line, sizeof(line), file)) {
         // Separar la línea en elementos (por ejemplo, usando strtok)
-        	char* token = strtok(line, ",\n"); // Separadores: coma, espacio, nueva línea
+        	char* token = strtok(line, " "); // Separadores: coma, espacio, nueva línea
         		while (token != NULL) {
             	int num = atoi(token);         // Convertir a entero
             		insert(head, num);         // Insertar en la lista
