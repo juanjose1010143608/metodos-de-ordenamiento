@@ -6,7 +6,7 @@
 
 #define MAX_SIZE 100
 
-// Definición de la estructura de nodo
+// DefiniciÃ³n de la estructura de nodo
 typedef struct Node {
     int data;
     struct Node* next;
@@ -28,12 +28,12 @@ void shellSort(int arr[], int n);                   //funcion shellSort
 void countingSort(int arr[], int n);                //funcion countingSort
 int getMax(int arr[], int n);                       //funcion getMax
 void radixSort(int arr[], int n);                   //funcion radixSort  
-void loadFromFile(Node** head, char* filename);     //función para cargar desde archivo
+void loadFromFile(Node** head, char* filename);     //funciÃ³n para cargar desde archivo
 void saveToFile(int arr[], int n, char* filename); // funcion para guardar el archivo 
 
 int main() {
     Node* head = NULL;  // Puntero al primer nodo de la lista, inicialmente apunta a NULL
-    int choice, num;    // Declaración de variables para el menú y manipulación de datos
+    int choice, num;    // DeclaraciÃ³n de variables para el menÃº y manipulaciÃ³n de datos
     char filename[100]; // Variable para almacenar el nombre del archivo
     int arr[100], n, i;  // Arreglo y variables para manipular datos
 
@@ -60,9 +60,9 @@ int main() {
        			 switch(choice) {
        				case 1:
                 		printf("Ingrese el numero a agregar: ");
-                		scanf("%d", &num); // Lee el número ingresado por el usuario y lo almacena en la variable 'num'
-                		insert(&head, num); //Llama a la función 'insert' para agregar el número ingresado a la lista enlazada,
-						                   // pasando la dirección de memoria del puntero 'head' y el número 'num' como argumentos
+                		scanf("%d", &num); // Lee el nÃºmero ingresado por el usuario y lo almacena en la variable 'num'
+                		insert(&head, num); //Llama a la funciÃ³n 'insert' para agregar el nÃºmero ingresado a la lista enlazada,
+						                   // pasando la direcciÃ³n de memoria del puntero 'head' y el nÃºmero 'num' como argumentos
                 		break;
                 		
                 	case 2:
@@ -72,8 +72,8 @@ int main() {
     					printf("Ingrese los elementos:\n");
     					for (i = 0; i < n; i++) {
         				 scanf("%d", &arr[i]);  // Lee cada elemento ingresado por el usuario y lo almacena en el arreglo 'arr'
-        				 insert(&head, arr[i]); // Llama a la función 'insert' para agregar el elemento a la lista enlazada, 
-						                      //pasando la dirección de memoria del puntero 'head' y el elemento 'arr[i]' como argumentos
+        				 insert(&head, arr[i]); // Llama a la funciÃ³n 'insert' para agregar el elemento a la lista enlazada, 
+						                      //pasando la direcciÃ³n de memoria del puntero 'head' y el elemento 'arr[i]' como argumentos
 				        }
 					}
     			      break;
@@ -85,7 +85,7 @@ int main() {
                 break;
                 
             case 3:
-                // Submenú para elegir el método de ordenamiento
+                // SubmenÃº para elegir el mÃ©todo de ordenamiento
                 printf("\nMetodos de ordenamiento:\n");
                 printf("1. Bubble Sort\n");
                 printf("2. Selection Sort\n");
@@ -103,7 +103,7 @@ int main() {
                     case 1:
                         //*******Ordenar con Bubble Sort**********
                         
-                          int arr[5000];              //Declaración para almacenar los elementos de la lista
+                          int arr[5000];              //DeclaraciÃ³n para almacenar los elementos de la lista
                           {
                             Node* current = head;         //puntero que apunta al primer nodo de la lista
                             int i = 0;                   // inicializacion de un contador
@@ -127,16 +127,15 @@ int main() {
                     case 2:
                           // Ordenar con Selection Sort ////////
                         {
-                            int arr[5000];         // Declara un arreglo 'arr' de tamaño 5000 para almacenar los datos de la lista enlazada
+                            int arr[5000];         // Declara un arreglo 'arr' de tamaÃ±o 5000 para almacenar los datos de la lista enlazada
                             Node* current = head;  // Declara un puntero 'current' y lo inicializa apuntando al primer nodo de la lista enlazada
-                            int i = 0;             // Inicializa un contador 'i' para rastrear el índice actual en el arreglo 'arr'
+                            int i = 0;             // Inicializa un contador 'i' para rastrear el Ã­ndice actual en el arreglo 'arr'
                             
 							// Recorre la lista enlazada y almacena los datos en el arreglo 'arr'
 							while (current != NULL) {
                                 arr[i++] = current->data;  // Almacena el dato del nodo actual en el arreglo 'arr' y luego incrementa 'i'
-                                current = current->next;  // Avanza al siguiente nodo en la lista
-}                       }
-                            // Ordena el arreglo 'arr' utilizando el algoritmo de ordenación por selección
+                                current = current->next;  // Avanza al siguiente nodo en la lista}                       }
+                            // Ordena el arreglo 'arr' utilizando el algoritmo de ordenaciÃ³n por selecciÃ³n
                             selectionSort(arr, i);
                           
                             printf("Lista ordenada: ");   // Imprime los elementos ordenados del arreglo 'arr' como la lista ordenada
@@ -290,9 +289,9 @@ int main() {
             case 5:
                 printf("Ingrese el nombre del archivo: ");
                 scanf("%s", filename);                          //Lee el nombre del archivo ingresado por el usuario y lo almacena en la variable 'filename'
-                loadFromFile(&head, filename);                  //Llamar a la función para cargar desde archivo
+                loadFromFile(&head, filename);                  //Llamar a la funciÃ³n para cargar desde archivo
                 printf("Lista cargada desde el archivo: \n");
-    			display(head);                                  //Llama a la función 'display' para mostrar la lista cargada en la consola
+    			display(head);                                  //Llama a la funciÃ³n 'display' para mostrar la lista cargada en la consola
 			    break;
                 
             case 6:
@@ -321,26 +320,26 @@ int main() {
     return 0;
 }
 
-///// Función para insertar un nodo al final de la lista /////////////////////
+///// FunciÃ³n para insertar un nodo al final de la lista /////////////////////
 
 void insert(Node** head, int data) {
-    Node* newNode = (Node*)malloc(sizeof(Node)); // Crea un nuevo nodo y reserva memoria para él
+    Node* newNode = (Node*)malloc(sizeof(Node)); // Crea un nuevo nodo y reserva memoria para Ã©l
     newNode->data = data;  //Asigna el valor 'data' al campo de datos del nuevo nodo
-    newNode->next = NULL;  //Establece el puntero 'next' del nuevo nodo como NULL, ya que será el último nodo en la lista
-    if (*head == NULL) {   //Verifica si la lista está vacía
-        *head = newNode;   //Si la lista está vacía, el nuevo nodo se convierte en el primer nodo de la lista
+    newNode->next = NULL;  //Establece el puntero 'next' del nuevo nodo como NULL, ya que serÃ¡ el Ãºltimo nodo en la lista
+    if (*head == NULL) {   //Verifica si la lista estÃ¡ vacÃ­a
+        *head = newNode;   //Si la lista estÃ¡ vacÃ­a, el nuevo nodo se convierte en el primer nodo de la lista
     } else {
-        Node* last = *head;          //Si la lista no está vacía, se inicializa un puntero 'last' apuntando al primer nodo de la lista
-        while (last->next != NULL) { //Recorre la lista hasta encontrar el último nodo
+        Node* last = *head;          //Si la lista no estÃ¡ vacÃ­a, se inicializa un puntero 'last' apuntando al primer nodo de la lista
+        while (last->next != NULL) { //Recorre la lista hasta encontrar el Ãºltimo nodo
             last = last->next;       //Avanza al siguiente nodo en la lista
         }
-        last->next = newNode; // Cuando se encuentra el último nodo, se establece el puntero 'next' para que apunte al nuevo nodo, agregándolo al final de la lista
+        last->next = newNode; // Cuando se encuentra el Ãºltimo nodo, se establece el puntero 'next' para que apunte al nuevo nodo, agregÃ¡ndolo al final de la lista
     }
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
-////// Función para eliminar un nodo de la lista ////////////////////////////
+////// FunciÃ³n para eliminar un nodo de la lista ////////////////////////////
 
 void deletenode(Node** head, int data) {
     Node* temp = *head;  // Se asigna el puntero 'temp' para que apunte al inicio de la lista
@@ -365,12 +364,12 @@ void deletenode(Node** head, int data) {
         return;
     }
 
-    prev->next = temp->next;  // Enlaza el nodo anterior al nodo siguiente al nodo a eliminar, omitiéndolo
+    prev->next = temp->next;  // Enlaza el nodo anterior al nodo siguiente al nodo a eliminar, omitiÃ©ndolo
     free(temp);               // Libera la memoria del nodo eliminado
 }
 /////////////////////////////////////////////////////////////////////
 
-///////// Función para mostrar la lista /////////////////////////////////
+///////// FunciÃ³n para mostrar la lista /////////////////////////////////
 
 void display(Node* head) {
     Node* current = head;
@@ -378,23 +377,23 @@ void display(Node* head) {
         printf("La lista esta vacia.\n");
         return;
     }
-    int count = 0;                     // Contador para controlar el número de elementos por columna
+    int count = 0;                     // Contador para controlar el nÃºmero de elementos por columna
 	while (current != NULL) {
         printf("%d ", current->data); // Imprimir el elemento
         count++;
 		if (count % 4 == 0) {
 			
-        // Si hemos impreso 5 elementos, cambiamos de línea
+        // Si hemos impreso 5 elementos, cambiamos de lÃ­nea
             printf("\n");
         }
 
         current = current->next;
     }
-    printf("\n"); // Agregamos un salto de línea al final
+    printf("\n"); // Agregamos un salto de lÃ­nea al final
 }
 //////////////////////////////////////////////////////////////////////////
 
-//////// Función para cargar desde un archivo de texto /////////////////////
+//////// FunciÃ³n para cargar desde un archivo de texto /////////////////////
 
 void loadFromFile(Node** head, char* filename) {
     FILE *file = fopen(filename, "r");
@@ -404,8 +403,8 @@ void loadFromFile(Node** head, char* filename) {
     }
         char line[MAX_SIZE];
     		while (fgets(line, sizeof(line), file)) {
-        // Separar la línea en elementos (por ejemplo, usando strtok)
-        	char* token = strtok(line, ",\n"); // Separadores: coma, espacio, nueva línea
+        // Separar la lÃ­nea en elementos (por ejemplo, usando strtok)
+        	char* token = strtok(line, ",\n"); // Separadores: coma, espacio, nueva lÃ­nea
         		while (token != NULL) {
             	int num = atoi(token);         // Convertir a entero
             		insert(head, num);         // Insertar en la lista
@@ -419,7 +418,7 @@ void loadFromFile(Node** head, char* filename) {
 
   
 
-////// Función para guardar en un archivo de texto///////////////////
+////// FunciÃ³n para guardar en un archivo de texto///////////////////
 
 void saveToFile(int arr[], int n, char* filename) {
     FILE *file = fopen(filename, "w");
@@ -436,7 +435,7 @@ void saveToFile(int arr[], int n, char* filename) {
 
 
 
-////////// Función de Bubble Sort //////////////////////////////
+////////// FunciÃ³n de Bubble Sort //////////////////////////////
 
 void bubbleSort(int arr[], int n) {
     int temp;
@@ -471,14 +470,14 @@ void selectionSort(int arr[], int n) {
     // Iterar sobre el array
     for (i = 0; i < n-1; i++) {
     	
-        // Encontrar el índice del mínimo en el array no ordenado
+        // Encontrar el Ã­ndice del mÃ­nimo en el array no ordenado
         min_idx = i;
         for (j = i+1; j < n; j++) {
             if (arr[j] < arr[min_idx]) {
                 min_idx = j;
             }
         }
-        // Intercambiar el mínimo con el primer elemento del array no ordenado
+        // Intercambiar el mÃ­nimo con el primer elemento del array no ordenado
         swap(&arr[min_idx], &arr[i]);
     }
      clock_t end_time = clock(); // Detener el temporizador
@@ -498,7 +497,7 @@ void insertionSort(int arr[], int n) {
         key = arr[i];
         j = i - 1;
         
-    // Mover los elementos del array que son mayores que key a una posición adelante de su posición actual
+    // Mover los elementos del array que son mayores que key a una posiciÃ³n adelante de su posiciÃ³n actual
         while (j >= 0 && arr[j] > key) {
             arr[j + 1] = arr[j];
             j = j - 1;
@@ -507,7 +506,7 @@ void insertionSort(int arr[], int n) {
     }
      clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 ////////////////////////////////////////////////////////////////////////////
 
@@ -571,7 +570,7 @@ void mergeSort(int arr[], int l, int r) {
     }
     clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -606,7 +605,7 @@ void quickSort(int arr[], int low, int high) {
     }
     clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -615,7 +614,7 @@ void quickSort(int arr[], int low, int high) {
 void bucketSort(int arr[], int n) {
 	  clock_t start_time = clock(); // Iniciar el temporizador
     
-	// Encontrar el valor máximo en el array
+	// Encontrar el valor mÃ¡ximo en el array
     int max_val = arr[0];
     
     for (int i = 1; i < n; i++) {
@@ -647,7 +646,7 @@ void bucketSort(int arr[], int n) {
     free(buckets);
     clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -667,7 +666,7 @@ void shellSort(int arr[], int n) {
     }
     clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -711,7 +710,7 @@ void countingSort(int arr[], int n) {
     free(output);
     clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 /////////////////////////////////////////////////////////////////////////////////
 
@@ -728,7 +727,7 @@ int getMax(int arr[], int n) {
     return max;
     clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 /////////////////////////////////////////////////////////////////////////////////////
 
@@ -738,18 +737,18 @@ void countSortRadix(int arr[], int n, int exp) {
 // Creamos un arreglo temporal para almacenar los elementos ordenados
     int output[n];
    
-    // Declaración de variables locales
-    int i, count[10] = {0};  //count se utiliza para almacenar la frecuencia de los dígitos (0-9)
+    // DeclaraciÃ³n de variables locales
+    int i, count[10] = {0};  //count se utiliza para almacenar la frecuencia de los dÃ­gitos (0-9)
   
-  	// Contamos la frecuencia de cada dígito en el arreglo original
+  	// Contamos la frecuencia de cada dÃ­gito en el arreglo original
     for (i = 0; i < n; i++)
         count[(arr[i] / exp) % 10]++;
         
-  // Modificamos count para que contenga las posiciones finales de cada dígito en el arreglo ordenado
+  // Modificamos count para que contenga las posiciones finales de cada dÃ­gito en el arreglo ordenado
     for (i = 1; i < 10; i++)
         count[i] += count[i - 1];
   
-  // Construimos el arreglo ordenado en el arreglo output usando la información de count
+  // Construimos el arreglo ordenado en el arreglo output usando la informaciÃ³n de count
     for (i = n - 1; i >= 0; i--) {
         output[count[(arr[i] / exp) % 10] - 1] = arr[i];
         count[(arr[i] / exp) % 10]--;
@@ -764,19 +763,19 @@ void countSortRadix(int arr[], int n, int exp) {
   
 void radixSort(int arr[], int n) {
 	clock_t start_time = clock(); // Iniciar el temporizador
-    int m = getMax(arr, n);        // Obtenemos el valor máximo del arreglo
+    int m = getMax(arr, n);        // Obtenemos el valor mÃ¡ximo del arreglo
   
-    // Iteramos sobre cada posición de los dígitos en el número
-    // Empezamos por el dígito menos significativo (exp = 1)
-    // y avanzamos al siguiente dígito multiplicando por 10
+    // Iteramos sobre cada posiciÃ³n de los dÃ­gitos en el nÃºmero
+    // Empezamos por el dÃ­gito menos significativo (exp = 1)
+    // y avanzamos al siguiente dÃ­gito multiplicando por 10
     
     for (int exp = 1; m / exp > 0; exp *= 10)
     
-        countSortRadix(arr, n, exp); //Llamamos a la función countSortRadix para ordenar los elementos
+        countSortRadix(arr, n, exp); //Llamamos a la funciÃ³n countSortRadix para ordenar los elementos
 
     clock_t end_time = clock(); // Detener el temporizador
     double elapsed_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC; // Calcular el tiempo transcurrido en segundos
-    printf("Tiempo de ejecución de Shell Sort: %.6f segundos\n", elapsed_time);
+    printf("Tiempo de ejecuciÃ³n de Shell Sort: %.6f segundos\n", elapsed_time);
 }
 
 
