@@ -1,1 +1,9 @@
+Metodos de ordenamiento
+Los métodos de ordenamiento son algoritmos que organizan los registros de una tabla en algún orden secuencial según un criterio dado. Este proceso se basa en el valor de un campo dentro de un conjunto de datos y puede realizarse de manera iterativa o recursiva, según la naturaleza y la forma de ejecución del método.
 
+A continuación se presentan ejemplos comunes de métodos de ordenamiento, junto con sus características principales y su implementación en C++:
+
+1. Bubble Sort:
+El BubbleSort es un algoritmo de ordenamiento sencillo que recorre cada elemento de la lista a ordenar, comparándolo con el siguiente y intercambiándolos si están en un orden incorrecto (n > n+1). Este proceso se repite varias veces hasta que no se realicen más intercambios, lo que indica que la lista está ordenada.
+
+2. 
