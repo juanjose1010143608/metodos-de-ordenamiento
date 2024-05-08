@@ -1,9 +1,53 @@
 Metodos de ordenamiento
-Los métodos de ordenamiento son algoritmos que organizan los registros de una tabla en algún orden secuencial según un criterio dado. Este proceso se basa en el valor de un campo dentro de un conjunto de datos y puede realizarse de manera iterativa o recursiva, según la naturaleza y la forma de ejecución del método.
+Los métodos de ordenamiento son algoritmos que organizan los registros de una tabla en algún orden secuencial según un criterio dado. Este proceso se basa en el valor
+e un campo dentro de un conjunto de datos y puede realizarse de manera iterativa o recursiva, según la naturaleza y la forma de ejecución del método.
 
 A continuación se presentan ejemplos comunes de métodos de ordenamiento, junto con sus características principales y su implementación en C++:
 
 1. Bubble Sort:
-El BubbleSort es un algoritmo de ordenamiento sencillo que recorre cada elemento de la lista a ordenar, comparándolo con el siguiente y intercambiándolos si están en un orden incorrecto (n > n+1). Este proceso se repite varias veces hasta que no se realicen más intercambios, lo que indica que la lista está ordenada.
+El BubbleSort es un algoritmo de ordenamiento sencillo que recorre cada elemento de la lista a ordenar, comparándolo con el siguiente y intercambiándolos si están 
+en un orden incorrecto (n > n+1). Este proceso se repite varias veces hasta que no se realicen más intercambios, lo que indica que la lista está ordenada.
 
-2. 
+2. Selection Sort:
+El Método de Ordenamiento por Selección implica la búsqueda del elemento más pequeño entre todos los elementos no ordenados y colocarlo al principio de la lista. 
+Este proceso se repite con los elementos restantes, sin considerar aquellos que ya han sido ordenados.
+
+3. Insertion Sort:
+
+4. Merge Sort: 
+El algoritmo de Ordenamiento por Mezcla opera de manera específica. Si la longitud de la lista es 0 o 1, se considera automáticamente como ordenada. En otros casos,
+el algoritmo divide la lista desordenada en dos sublistas, cada una aproximadamente de la mitad del tamaño original. Luego, ordena cada una de estas sublistas de 
+manera recursiva utilizando el mismo algoritmo de Ordenamiento por Mezcla. Finalmente, fusiona las dos sublistas ordenadas en una única lista ordenada.
+
+5. Quick Sort:
+El Método de Ordenamiento Rápido, al igual que el Ordenamiento por Mezcla, es un algoritmo basado en la estrategia "divide y vencerás". En este método, se 
+selecciona un elemento como pivote y se divide la matriz alrededor de ese pivote. Hay múltiples variantes de este algoritmo que eligen el pivote de diferentes 
+maneras:
+
+- Al seleccionar siempre el primer elemento como pivote.
+- Al seleccionar siempre el último elemento como pivote.
+- Al seleccionar un elemento aleatorio como pivote.
+- Al seleccionar la mitad de la matriz como pivote.
+
+El proceso fundamental en el Ordenamiento Rápido es la partición. Su objetivo es tomar un elemento de la matriz y colocarlo en su posición correcta en la matriz 
+ordenada, garantizando que todos los elementos menores que el pivote estén antes de él, y que todos los elementos mayores que el pivote estén después de él.
+
+6. Bucket Sort:
+El método de ordenamiento Bucket Sort es una técnica de clasificación que funciona dividiendo una lista desordenada en un número finito de "cubetas" (o "buckets"). 
+Cada cubeta actúa como un contenedor que puede contener un rango específico de valores. Luego, los elementos de la lista original se distribuyen en estas cubetas 
+según el valor de cada elemento.
+
+7. Shell Sort:
+El Método de ordenamiento Shell es una mejora del Método de Ordenamiento por inserción ya que el Método de inserción es eficiente si la lista está casi ordenada, 
+para ello el Método Shell compara elementos separados por un espacio de varias posiciones, esto permite que un elemento haga “pasos más grandes” hacia su posición 
+esperada, el mismo finaliza con un Ordenamiento por inserción simple. 
+
+8. Counting Sort:
+Counting Sort es un algoritmo eficiente cuando el rango de valores de los elementos es relativamente pequeño en comparación con el número total de elementos. 
+Tiene una complejidad temporal de O(n + k), donde n es el número de elementos y k es el rango de valores. Sin embargo, Counting Sort no es adecuado para ordenar 
+elementos cuando el rango de valores es muy grande o si los elementos son objetos complejos.
+
+9. Radix Sort:
+Radix Sort es eficiente para ordenar números enteros con un número fijo de dígitos, ya que tiene un tiempo de ejecución lineal O(nk), donde n es el número de 
+elementos y k es el número de dígitos. Sin embargo, Radix Sort puede no ser tan eficiente para ordenar números con un rango variable de dígitos o para ordenar 
+elementos que no son enteros.
