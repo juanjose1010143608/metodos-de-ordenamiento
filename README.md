@@ -21,7 +21,7 @@ También contamos con un submenú interactivo, el cual nos brinda nuevas opcione
             	printf("Ingrese su opcion: ");
 
 ### 1. Bubble Sort
-BubbleSort es un algoritmo de clasificación simple. Funciona comparando cada elemento de la lista ordenada con el elemento que le sigue y cambiando su posición si están desordenados (n>n+1). Debe repetir este proceso varias veces hasta que no sean necesarios más cambios, lo que significa que la lista estará ordenada. Un ejemplo de clasificación con bubblesort sería el siguiente:
+BubbleSort es un algoritmo de clasificación simple. Funciona comparando cada elemento de la lista ordenada con el elemento que le sigue y cambiando su posición si están desordenados (n>n+1). Debe repetir este proceso varias veces hasta que no sean necesarios más cambios, lo que significa que la lista estará ordenada.
 
 Este es el respectivo codigo para un ordenamiento por BubbleSort
 
@@ -45,4 +45,19 @@ Este es el respectivo codigo para un ordenamiento por BubbleSort
                         }
 
 ### 2. Selection Sort
-El método de clasificación de la selección consiste en encontrar el más pequeño de todos los elementos no clasificados y colocarlo al principio, tras lo cual se debe repetir lo mismo con los demás (los que ya están ordenados no se consideran). Aquí hay un ejemplo más visual del método:
+El método de clasificación de la selección consiste en encontrar el más pequeño de todos los elementos no clasificados y colocarlo al principio, tras lo cual se debe repetir lo mismo con los demás (los que ya están ordenados no se consideran).
+
+### 3. Insertion Sort
+El método de clasificación de entrada itera sobre la lista para ordenar, toma el elemento actual y lo inserta donde debería estar, y lo compara con el elemento ya pasado. 
+
+### 4. Merge Sort
+
+### 5. Quick Sort
+
+### 6. Bucket Sort
+
+### 7. Shell Sort
+
+### 8. Counting Sort
+
+### 9. Radix Sor
