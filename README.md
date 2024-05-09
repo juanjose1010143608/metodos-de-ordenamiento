@@ -107,7 +107,6 @@ Este algoritmo divide recursivamente la lista por la mitad hasta que cada mitad 
 
 ### 5. Quick Sort
 
-{
 				            int arr[6000];
 				            Node* current = head;
 				            int i = 0;
@@ -124,8 +123,7 @@ Este algoritmo divide recursivamente la lista por la mitad hasta que cada mitad 
 				        }
 
 ### 6. Bucket Sort
-
- {
+ 
 				            int arr[6000];
 				            Node* current = head;
 				            int i = 0;
@@ -143,7 +141,6 @@ Este algoritmo divide recursivamente la lista por la mitad hasta que cada mitad 
 
 ### 7. Shell Sort
 
-{
 			            int arr[6000];
 			            Node* current = head;
 			            int i = 0;
