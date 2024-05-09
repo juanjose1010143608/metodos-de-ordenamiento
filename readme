@@ -51,3 +51,26 @@ elementos cuando el rango de valores es muy grande o si los elementos son objeto
 Radix Sort es eficiente para ordenar números enteros con un número fijo de dígitos, ya que tiene un tiempo de ejecución lineal O(nk), donde n es el número de 
 elementos y k es el número de dígitos. Sin embargo, Radix Sort puede no ser tan eficiente para ordenar números con un rango variable de dígitos o para ordenar 
 elementos que no son enteros.
+
+
+
+En cuanto a los pasos a seguir en el código, tenemos:
+1. Preparación del archivo de datos: Antes de comenzar, se debe tener un archivo de datos con al menos 5000 números para ordenar. Este archivo puede contener números aleatorios o puede ser generado previamente.
+
+2. Incluir bibliotecas necesarias: Al inicio del código, se debe asegurar de incluir las bibliotecas necesarias, como `<iostream>` para la entrada y salida estándar, y `<fstream>` para manejar archivos.
+
+3. Definir los métodos de ordenación: Crear las funciones para cada uno de los 9 métodos de ordenación que deseas implementar. Puedes tener funciones separadas para cada método o una función genérica que recibe el método de ordenación como parámetro.
+
+4. Abrir y leer el archivo: Utilizar la biblioteca `<fstream>` para abrir el archivo de datos y leer los números que contiene. Almacena estos números en un arreglo o vector en memoria.
+
+5. Implementar los algoritmos de ordenación: Para cada método de ordenación, aplica el algoritmo correspondiente al arreglo de números que has leído del archivo.
+
+6. Medir el tiempo de ejecución: Utiliza funciones como `clock()` o `chrono::high_resolution_clock` para medir el tiempo de ejecución de cada método de ordenación.
+
+7. Escribir los resultados en un nuevo archivo: Después de ordenar los números, se deben escribir los resultados en un nuevo archivo. Puedes utilizar el mismo archivo de entrada y sobrescribirlo, o crear un nuevo archivo para cada método de ordenación.
+
+8. Repetir el proceso: Repetir los pasos del 4 al 7 para cada método de ordenación que deseas probar.
+
+9. Comparar resultados: Una vez que se haya ordenado los números utilizando los 9 métodos diferentes, compara los resultados para verificar que cada método produce el mismo resultado ordenado.
+
+10. Analizar el rendimiento: Finalmente, se analiza y compara el tiempo de ejecución de cada método de ordenación para determinar cuál es más eficiente en términos de tiempo de ejecución.
