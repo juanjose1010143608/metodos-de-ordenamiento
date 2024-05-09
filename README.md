@@ -14,7 +14,7 @@ En principio, contamos con el menú interactivo, el cual nos brinda diferentes o
         printf("6. Guardar en archivo\n");
 		printf("7. Salir\n");
 
-### OPCION N°1 AGRGAR NUMERO
+### OPCION N°1 AGREGAR NUMERO
 
 en la primera opcion contamos con un submenu, donde podemos ingresar un solo numero o tambien un vector de numeros.
 
