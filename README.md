@@ -14,14 +14,15 @@ En principio, contamos con el menú interactivo, el cual nos brinda diferentes o
         printf("6. Guardar en archivo\n");
 		printf("7. Salir\n");
 
-##Opcion N°1
+##Opcion N°1 Agrgar numero
 en la primera opcion contamos con un submenu, donde podemos ingresar un solo numero o tambien un vector de numeros.
 
             	printf("1.Ingresar un numero\n");
             	printf("2.Ingresar un vector\n");
             	printf("Ingrese su opcion: ");
 
-##Opcion N°2
+##Opcion N°2 Eliminar numero
+
 En la segunda opcion tenemos la funcion de eliminar algun numero de nuestra lista.
 Su codigo es el siguiente. 
 
@@ -54,7 +55,8 @@ Su codigo es el siguiente.
 		free(temp);               // Libera la memoria del nodo eliminado
         }
  
- ##Opcion N°3
+ ##Opcion N°3 Metodos de ordenamiento
+ 
  En la tercera opcion tenemos un submenu, donde mostramos 9 metodos de ordenamiento, donde el usuario escogera el que desee.
  
              printf("\nMetodos de ordenamiento:\n");
@@ -248,7 +250,8 @@ Es un algoritmo de ordenamiento que ordena los elementos comparando sus dígitos
 				    	} 
 						
 
-##Opcion 4
+##Opcion N°4 Imprimir lista
+
 En esta opcion se imprime la lista de numeros que contiene nuestro programa, cuenta con un contador y un salto de linea, para que cada que lea una cantidad haga un salto de linea.
 
     	void display(Node* head) {
@@ -271,7 +274,8 @@ En esta opcion se imprime la lista de numeros que contiene nuestro programa, cue
           printf("\n"); // Agregamos un salto de línea al final
      }
 
-##Opcion N°5
+##Opcion N°5 Cargar Archivo 
+
 En esta funcion tenemos la opcion de poder cargar un archivo txt que contenga una cierta cantidad de datos integrados.
 
      void loadFromFile(Node** head, char* filename) {
@@ -295,6 +299,7 @@ En esta funcion tenemos la opcion de poder cargar un archivo txt que contenga un
 Este codigo recibe un archivo de texto con numeros en su interior, sus listas deben de estar separadas por espacio y sin ningun otro simbolos, solo leera numeros nada de lestras, el archivo que se integrara debe de estar en la misma ubicacion que se encuentra ubicada el programa para que este funcione correctamente.
 
 #conclusion
+
 Este codigo puede ordenar una cantidad de 5000 datos numericos que esten enlistados, puede agregar mas datos y tambien puede eliminarlos, tiene su tiempo en segundos y su cantidad de iteraciones cada ves que se ejecuta un metodo de ordenamiento.
 
 
