@@ -47,8 +47,6 @@ Este es el respectivo codigo para un ordenamiento por BubbleSort
 ### 2. Selection Sort
 El método de clasificación de la selección consiste en encontrar el más pequeño de todos los elementos no clasificados y colocarlo al principio, tras lo cual se debe repetir lo mismo con los demás (los que ya están ordenados no se consideran).
 
-
-  {
                             int arr[6000];         // Declara un arreglo 'arr' de tamaño 5000 para almacenar los datos de la lista enlazada
                             Node* current = head;  // Declara un puntero 'current' y lo inicializa apuntando al primer nodo de la lista enlazada
                             int i = 0;             // Inicializa un contador 'i' para rastrear el índice actual en el arreglo 'arr'
