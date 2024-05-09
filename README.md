@@ -15,14 +15,13 @@ En principio, contamos con el menú interactivo, el cual nos brinda diferentes o
 		printf("7. Salir\n");
 
 ###Opcion N°1 Agrgar numero
-
 en la primera opcion contamos con un submenu, donde podemos ingresar un solo numero o tambien un vector de numeros.
 
             	printf("1.Ingresar un numero\n");
             	printf("2.Ingresar un vector\n");
             	printf("Ingrese su opcion: ");
 
-##Opcion N°2 Eliminar numero
+###Opcion N°2 Eliminar numero
 
 En la segunda opcion tenemos la funcion de eliminar algun numero de nuestra lista.
 Su codigo es el siguiente. 
@@ -56,7 +55,7 @@ Su codigo es el siguiente.
 		free(temp);               // Libera la memoria del nodo eliminado
         }
  
- ##Opcion N°3 Metodos de ordenamiento
+ ### Opcion N°3 Metodos de ordenamiento
  
  En la tercera opcion tenemos un submenu, donde mostramos 9 metodos de ordenamiento, donde el usuario escogera el que desee.
  
@@ -251,7 +250,7 @@ Es un algoritmo de ordenamiento que ordena los elementos comparando sus dígitos
 				    	} 
 						
 
-##Opcion N°4 Imprimir lista
+### Opcion N°4 Imprimir lista
 
 En esta opcion se imprime la lista de numeros que contiene nuestro programa, cuenta con un contador y un salto de linea, para que cada que lea una cantidad haga un salto de linea.
 
@@ -275,7 +274,7 @@ En esta opcion se imprime la lista de numeros que contiene nuestro programa, cue
           printf("\n"); // Agregamos un salto de línea al final
      }
 
-##Opcion N°5 Cargar Archivo 
+### Opcion N°5 Cargar Archivo 
 
 En esta funcion tenemos la opcion de poder cargar un archivo txt que contenga una cierta cantidad de datos integrados.
 
