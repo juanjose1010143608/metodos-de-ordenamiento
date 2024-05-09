@@ -1,4 +1,4 @@
-Metodos de ordenamiento
+## Metodos de ordenamiento
 Los métodos de ordenamiento son algoritmos que organizan los registros de una tabla en algún orden secuencial según un criterio dado. Este proceso se basa en el valor
 e un campo dentro de un conjunto de datos y puede realizarse de manera iterativa o recursiva, según la naturaleza y la forma de ejecución del método.
 
