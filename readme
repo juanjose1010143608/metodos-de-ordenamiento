@@ -5,14 +5,13 @@ e un campo dentro de un conjunto de datos y puede realizarse de manera iterativa
 A continuación se presentan ejemplos comunes de métodos de ordenamiento, junto con sus características principales y su implementación en C++:
 
 1. Bubble Sort:
-El BubbleSort es un algoritmo de ordenamiento sencillo que recorre cada elemento de la lista a ordenar, comparándolo con el siguiente y intercambiándolos si están 
-en un orden incorrecto (n > n+1). Este proceso se repite varias veces hasta que no se realicen más intercambios, lo que indica que la lista está ordenada.
+El BubbleSort es un algoritmo de ordenamiento sencillo que recorre cada elemento de la lista a ordenar, comparándolo con el siguiente y intercambiándolos si están en un orden incorrecto (n > n+1). Este proceso se repite varias veces hasta que no se realicen más intercambios, lo que indica que la lista está ordenada.
 
 2. Selection Sort:
-El Método de Ordenamiento por Selección implica la búsqueda del elemento más pequeño entre todos los elementos no ordenados y colocarlo al principio de la lista. 
-Este proceso se repite con los elementos restantes, sin considerar aquellos que ya han sido ordenados.
+El Método de Ordenamiento por Selección implica la búsqueda del elemento más pequeño entre todos los elementos no ordenados y colocarlo al principio de la lista. Este proceso se repite con los elementos restantes, sin considerar aquellos que ya han sido ordenados.
 
-3. Insertion Sort:
+3. Insertion Sort: 
+Encuentra el elemento más pequeño en el arreglo y lo intercambia con el primer elemento. Encuentra el segundo elemento más pequeño y lo intercambia con el segundo elemento del arreglo.
 
 4. Merge Sort: 
 El algoritmo de Ordenamiento por Mezcla opera de manera específica. Si la longitud de la lista es 0 o 1, se considera automáticamente como ordenada. En otros casos,
