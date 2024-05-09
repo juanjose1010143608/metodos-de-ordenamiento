@@ -47,10 +47,63 @@ Este es el respectivo codigo para un ordenamiento por BubbleSort
 ### 2. Selection Sort
 El método de clasificación de la selección consiste en encontrar el más pequeño de todos los elementos no clasificados y colocarlo al principio, tras lo cual se debe repetir lo mismo con los demás (los que ya están ordenados no se consideran).
 
+  {
+                            int arr[6000];         // Declara un arreglo 'arr' de tamaño 5000 para almacenar los datos de la lista enlazada
+                            Node* current = head;  // Declara un puntero 'current' y lo inicializa apuntando al primer nodo de la lista enlazada
+                            int i = 0;             // Inicializa un contador 'i' para rastrear el índice actual en el arreglo 'arr'
+                            
+							// Recorre la lista enlazada y almacena los datos en el arreglo 'arr'
+							while (current != NULL) {
+                                arr[i++] = current->data;  // Almacena el dato del nodo actual en el arreglo 'arr' y luego incrementa 'i'
+                                current = current->next;  // Avanza al siguiente nodo en la lista
+                            }
+                            // Ordena el arreglo 'arr' utilizando el algoritmo de ordenación por selección
+                            selectionSort(arr, i);
+                          
+                            printf("Lista ordenada: ");   // Imprime los elementos ordenados del arreglo 'arr' como la lista ordenada
+                            for (int j = 0; j < i; j++) {
+                                printf("%d ", arr[j]);    // Imprime cada elemento del arreglo 'arr'
+                            }
+                            printf("\n");
+                        }
+						
+
 ### 3. Insertion Sort
-El método de clasificación de entrada itera sobre la lista para ordenar, toma el elemento actual y lo inserta donde debería estar, y lo compara con el elemento ya pasado. 
+El método de clasificación de entrada itera sobre la lista para ordenar, toma el elemento actual y lo inserta donde debería estar, y lo compara con el elemento ya pasado. Este es un ejemplo más claro del método de clasificación de entrada:
+
+	        {
+				        int arr[6000];
+				        Node* current = head;
+				        int i = 0;
+				        while (current != NULL) {
+				            arr[i++] = current->data;
+				            current = current->next;
+				        }
+				        insertionSort(arr, i);
+				        printf("Lista ordenada: ");
+				        for (int j = 0; j < i; j++) {
+				            printf("%d ", arr[j]);
+				        }
+				        printf("\n");
+				    }
 
 ### 4. Merge Sort
+
+                       {
+            				int arr[6000];
+					            Node* current = head;
+					            int i = 0;
+					            while (current != NULL) {
+					                arr[i++] = current->data;
+					                current = current->next;
+					            }
+					            mergeSort(arr, 0, i - 1);
+					            printf("Lista ordenada: ");
+					            for (int j = 0; j < i; j++) {
+					                printf("%d ", arr[j]);
+					            }
+							    printf("\n");
+		                }
 
 ### 5. Quick Sort
 
