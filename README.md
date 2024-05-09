@@ -15,6 +15,7 @@ En principio, contamos con el menú interactivo, el cual nos brinda diferentes o
 		printf("7. Salir\n");
 
 ###Opcion N°1 Agrgar numero
+
 en la primera opcion contamos con un submenu, donde podemos ingresar un solo numero o tambien un vector de numeros.
 
             	printf("1.Ingresar un numero\n");
