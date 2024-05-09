@@ -87,6 +87,7 @@ El método de clasificación de entrada itera sobre la lista para ordenar, toma 
 				    }
 
 ### 4. Merge Sort
+Este algoritmo divide recursivamente la lista por la mitad hasta que cada mitad contiene un elemento. Luego une estas mitades en orden, comparando y combinando los elementos en una lista ordenada más grande. Por su naturaleza recursiva y la combinación de sublistas ordenadas.
 
                        {
             				int arr[6000];
@@ -105,11 +106,87 @@ El método de clasificación de entrada itera sobre la lista para ordenar, toma 
 		                }
 
 ### 5. Quick Sort
+{
+				            int arr[6000];
+				            Node* current = head;
+				            int i = 0;
+				            while (current != NULL) {
+				                arr[i++] = current->data;
+				                current = current->next;
+				            }
+				            quickSort(arr, 0, i - 1);
+				            printf("Lista ordenada: ");
+				            for (int j = 0; j < i; j++) {
+				                printf("%d ", arr[j]);
+				            }
+				            printf("\n");
+				        }
 
 ### 6. Bucket Sort
+ {
+				            int arr[6000];
+				            Node* current = head;
+				            int i = 0;
+				            while (current != NULL) {
+				                arr[i++] = current->data;
+				                current = current->next;
+				            }
+				            bucketSort(arr, i);
+				            printf("Lista ordenada: ");
+				            for (int j = 0; j < i; j++) {
+				                printf("%d ", arr[j]);
+				            }
+				            printf("\n");
+				        }
 
 ### 7. Shell Sort
-
+{
+			            int arr[6000];
+			            Node* current = head;
+			            int i = 0;
+			            while (current != NULL) {
+			                arr[i++] = current->data;
+			                current = current->next;
+			            }
+			            shellSort(arr, i);
+			            printf("Lista ordenada: ");
+			            for (int j = 0; j < i; j++) {
+			                printf("%d ", arr[j]);
+			            }
+			            printf("\n");
+			        }
+			        
 ### 8. Counting Sort
+			        {
+			            int arr[6000];
+			            Node* current = head;
+			            int i = 0;
+			            while (current != NULL) {
+			                arr[i++] = current->data;
+			                current = current->next;
+			            }
+			            countingSort(arr, i);
+			            printf("Lista ordenada: ");
+			            for (int j = 0; j < i; j++) {
+			                printf("%d ", arr[j]);
+			            }
+			            printf("\n");
+			        }
 
-### 9. Radix Sor
+### 9. Radix Sort
+{
+				            int arr[6000];
+				            Node* current = head;
+				            int i = 0;
+				            while (current != NULL) {
+				                arr[i++] = current->data;
+				                current = current->next;
+				            }
+				            radixSort(arr, i);
+				            printf("Lista ordenada: ");
+				            
+				            for (int j = 0; j < i; j++) {
+				                printf("%d ", arr[j]);
+				            }
+				            printf("\n");
+				    	} 
